@@ -50,9 +50,11 @@ More information about a deployment options you can find [here](https://docs.mic
 ## Results
 
 As soon as application was published you will get an unique URL. By accessing it you should get current available regions list. At the time of writing available regions are:
+
 `['australiac2', 'australiac', 'australiaeast', 'australiasoutheast', 'brazilsouth', 'brazilse', 'canadacentral', 'canadaeast', 'indiacentral', 'uscentraleuap', 'uscentral', 'asiaeast', 'useast2euap', 'useast2', 'useast', 'francec', 'frances', 'germanyn', 'germanywc', 'japaneast', 'japanwest', 'koreacentral', 'koreasouth', 'usnorth', 'europenorth', 'norwaye', 'norwayw', 'southafrican', 'southafricaw', 'ussouth', 'indiasouth', 'asiasoutheast', 'switzerlandn', 'switzerlandw', 'uaec', 'uaen', 'uknorth', 'uksouth2', 'uksouth', 'ukwest', 'uswestcentral', 'europewest', 'indiawest', 'uswest2', 'uswest']`
 
 Now, for example, if you want to get IP list from West Europe - just append URL with `&location=europewest` and check the result:
+
 ![](/Images/palo_func.png)
 
 
