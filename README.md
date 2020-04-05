@@ -24,11 +24,9 @@ In PAN-OS an External Dynamic List is a text file that is hosted on an external 
 
 ### ARM template deployment
 
-Everything you need for a deployment is located in this repository. At first you need to deploy ARM template, located under '/Template/azuredeploy.json' path. To do so you can use any preferable option you want or just click on the button below:
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgroovy-sky%2Fazure-ip-dynamic-list%2Fmaster%2FTemplate%2Fazuredeploy.json" target="_blank">
+Everything you need for a deployment is located in this repository. At first you need to deploy ARM template, located under '/Template/azuredeploy.json' path. To do so you can use any preferable option you want or just click on the <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgroovy-sky%2Fazure-ip-dynamic-list%2Fmaster%2FTemplate%2Fazuredeploy.json" target="_blank">
     <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
-</a>
+</a> button.
 
 As a result will be deployed a function, storage account and consumption app service plan:
 ![](/Images/azure_resources.png)
