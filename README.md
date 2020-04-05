@@ -34,19 +34,25 @@ As a result will be deployed a function, storage account and consumption app ser
 ![](/Images/azure_resources.png)
 
 ### Function publish
-https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#publish
 
 To publish the function's code, please follow the instruction:
 
 1. Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) and [Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#v2)
 2. Clone this repository locally
-3. Go to 'Function' folder and run following command(where <FunctionAppName> should be your function name):
-`func azure functionapp publish <FunctionAppName>`
+3. Go to 'Function' folder and run following command(where `<FunctionAppName>` should be your function name):
+`func azure functionapp publish <FunctionAppName> --python`
+
+Deployment should take less than 5 minutes:
+![](/Images/azure_deploy.gif)
+
+More information about a deployment options you can find [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#project-file-deployment).
 
 ## Results
 
-If deployment was sucessfull 
+As soon as application was published you will get an unique URL. By accessing it you should get current available regions list. At the time of writing available regions are:
+`['australiac2', 'australiac', 'australiaeast', 'australiasoutheast', 'brazilsouth', 'brazilse', 'canadacentral', 'canadaeast', 'indiacentral', 'uscentraleuap', 'uscentral', 'asiaeast', 'useast2euap', 'useast2', 'useast', 'francec', 'frances', 'germanyn', 'germanywc', 'japaneast', 'japanwest', 'koreacentral', 'koreasouth', 'usnorth', 'europenorth', 'norwaye', 'norwayw', 'southafrican', 'southafricaw', 'ussouth', 'indiasouth', 'asiasoutheast', 'switzerlandn', 'switzerlandw', 'uaec', 'uaen', 'uknorth', 'uksouth2', 'uksouth', 'ukwest', 'uswestcentral', 'europewest', 'indiawest', 'uswest2', 'uswest']`
 
+Now, for example, if you want to get IP list from West Europe - just append URL with `&location=europewest` and check the result:
 ![](/Images/palo_func.png)
 
 

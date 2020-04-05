@@ -21,7 +21,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             format_range += i + '\n' 
         return func.HttpResponse(f"{format_range}")
     else:
-        return func.HttpResponse(
-             "Please pass a location on the query string or in the request body",
-             status_code=400
-        )
+        range_json = requests.post("https://azuredcip.azurewebsites.net/getazuredcipranges", json = {'request':'dcnames'} ) 
+        range = range_json.json()
+        return func.HttpResponse(f"{range}")
