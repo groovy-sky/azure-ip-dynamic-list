@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document gives an example how you can use Azure function to obtain and display Azure IP ranges. This function can be used in PAN-OS as URL for 'External Dynamic List'. 
+This document gives an example how you can use Azure function to obtain and display Azure datacenters IP ranges. 
 
 ## Theoretical Part
 
