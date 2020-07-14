@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document gives an example how you can use Azure function to obtain and display Azure datacenters IP ranges. 
+This document gives an example how you can use Azure function to obtain and display Azure data centers IP ranges. 
 
 ## Theoretical Part
 
